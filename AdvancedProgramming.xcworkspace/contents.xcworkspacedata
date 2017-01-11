@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:readme.txt">
+   </FileRef>
+   <FileRef
       location = "group:Playground/Playground.xcodeproj">
    </FileRef>
 </Workspace>
