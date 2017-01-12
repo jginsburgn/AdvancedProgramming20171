@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:001-MatrixMultiplication/001-MatrixMultiplication.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:readme.txt">
    </FileRef>
    <FileRef
