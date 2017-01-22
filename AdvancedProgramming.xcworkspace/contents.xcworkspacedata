@@ -2,10 +2,22 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:001-MatrixMultiplication/001-MatrixMultiplication.xcodeproj">
+      location = "group:qa.md">
+   </FileRef>
+   <FileRef
+      location = "group:notes.md">
    </FileRef>
    <FileRef
       location = "group:readme.txt">
+   </FileRef>
+   <FileRef
+      location = "group:Libraries">
+   </FileRef>
+   <FileRef
+      location = "group:002-StringSearch/002-StringSearch.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:001-MatrixMultiplication/001-MatrixMultiplication.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Playground/Playground.xcodeproj">

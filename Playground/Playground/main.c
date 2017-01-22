@@ -6,9 +6,15 @@
 //  Copyright © 2017 Jonathan Ginsburg. All rights reserved.
 //
 
-#include <stdio.h>
+#include "../../JG.h"
 
 int main(int argc, const char * argv[]) {
-
+//    int c;
+//    puts ("Enter text. Include a dot ('.') in a sentence to exit:");
+//    do {
+//        c=getchar();
+//        putchar (c);
+//    } while (c != '.');
+    readString();
     return 0;
 }
