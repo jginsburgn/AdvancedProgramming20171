@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA1FF4CD1E260F2300C3C596 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FA1FF4CC1E260F2300C3C596 /* main.c */; };
+		FA27FD131E357FC80010FB29 /* JG.o in Frameworks */ = {isa = PBXBuildFile; fileRef = FA27FD121E357FC80010FB29 /* JG.o */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		FA1FF4C91E260F2300C3C596 /* Playground */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Playground; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1FF4CC1E260F2300C3C596 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		FA27FD121E357FC80010FB29 /* JG.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = JG.o; path = ../Libraries/JG.o; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA27FD131E357FC80010FB29 /* JG.o in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +46,7 @@
 			children = (
 				FA1FF4CB1E260F2300C3C596 /* Playground */,
 				FA1FF4CA1E260F2300C3C596 /* Products */,
+				FA27FD111E357FC80010FB29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +64,14 @@
 				FA1FF4CC1E260F2300C3C596 /* main.c */,
 			);
 			path = Playground;
+			sourceTree = "<group>";
+		};
+		FA27FD111E357FC80010FB29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA27FD121E357FC80010FB29 /* JG.o */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

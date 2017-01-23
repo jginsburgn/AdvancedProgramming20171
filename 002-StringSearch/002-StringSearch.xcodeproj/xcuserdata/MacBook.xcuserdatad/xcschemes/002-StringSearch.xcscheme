@@ -61,13 +61,6 @@
             ReferencedContainer = "container:002-StringSearch.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "$LD_LIBRARY_PATH"
-            value = "/Users/MacBook/Repos/AdvancedProgramming20171/Libraries/SOS"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
