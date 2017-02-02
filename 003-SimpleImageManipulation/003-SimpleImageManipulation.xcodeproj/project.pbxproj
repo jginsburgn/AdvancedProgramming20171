@@ -1,0 +1,275 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAC8C61C1E432F1D00A06311 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FAC8C61B1E432F1D00A06311 /* main.c */; };
+		FAC8C6241E432F3600A06311 /* JG.o in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC8C6231E432F3600A06311 /* JG.o */; };
+		FAC8C6291E43331A00A06311 /* ppmmanipulation.c in Sources */ = {isa = PBXBuildFile; fileRef = FAC8C6271E43331A00A06311 /* ppmmanipulation.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAC8C6161E432F1D00A06311 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FAC8C6181E432F1D00A06311 /* 003-SimpleImageManipulation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "003-SimpleImageManipulation"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC8C61B1E432F1D00A06311 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		FAC8C6231E432F3600A06311 /* JG.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = JG.o; path = ../Libraries/JG.o; sourceTree = "<group>"; };
+		FAC8C6251E4331FC00A06311 /* test_images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = test_images; sourceTree = "<group>"; };
+		FAC8C6261E43327C00A06311 /* result.ppm */ = {isa = PBXFileReference; lastKnownFileType = file; path = result.ppm; sourceTree = "<group>"; };
+		FAC8C6271E43331A00A06311 /* ppmmanipulation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ppmmanipulation.c; sourceTree = "<group>"; };
+		FAC8C6281E43331A00A06311 /* ppmmanipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ppmmanipulation.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAC8C6151E432F1D00A06311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC8C6241E432F3600A06311 /* JG.o in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAC8C60F1E432F1D00A06311 = {
+			isa = PBXGroup;
+			children = (
+				FAC8C61A1E432F1D00A06311 /* 003-SimpleImageManipulation */,
+				FAC8C6191E432F1D00A06311 /* Products */,
+				FAC8C6221E432F3500A06311 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FAC8C6191E432F1D00A06311 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8C6181E432F1D00A06311 /* 003-SimpleImageManipulation */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAC8C61A1E432F1D00A06311 /* 003-SimpleImageManipulation */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8C61B1E432F1D00A06311 /* main.c */,
+				FAC8C6271E43331A00A06311 /* ppmmanipulation.c */,
+				FAC8C6281E43331A00A06311 /* ppmmanipulation.h */,
+				FAC8C6261E43327C00A06311 /* result.ppm */,
+				FAC8C6251E4331FC00A06311 /* test_images */,
+			);
+			path = "003-SimpleImageManipulation";
+			sourceTree = "<group>";
+		};
+		FAC8C6221E432F3500A06311 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8C6231E432F3600A06311 /* JG.o */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAC8C6171E432F1D00A06311 /* 003-SimpleImageManipulation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC8C61F1E432F1D00A06311 /* Build configuration list for PBXNativeTarget "003-SimpleImageManipulation" */;
+			buildPhases = (
+				FAC8C6141E432F1D00A06311 /* Sources */,
+				FAC8C6151E432F1D00A06311 /* Frameworks */,
+				FAC8C6161E432F1D00A06311 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "003-SimpleImageManipulation";
+			productName = "003-SimpleImageManipulation";
+			productReference = FAC8C6181E432F1D00A06311 /* 003-SimpleImageManipulation */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAC8C6101E432F1D00A06311 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Jonathan Ginsburg";
+				TargetAttributes = {
+					FAC8C6171E432F1D00A06311 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FAC8C6131E432F1D00A06311 /* Build configuration list for PBXProject "003-SimpleImageManipulation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FAC8C60F1E432F1D00A06311;
+			productRefGroup = FAC8C6191E432F1D00A06311 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAC8C6171E432F1D00A06311 /* 003-SimpleImageManipulation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAC8C6141E432F1D00A06311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC8C6291E43331A00A06311 /* ppmmanipulation.c in Sources */,
+				FAC8C61C1E432F1D00A06311 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FAC8C61D1E432F1D00A06311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FAC8C61E1E432F1D00A06311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FAC8C6201E432F1D00A06311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAC8C6211E432F1D00A06311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAC8C6131E432F1D00A06311 /* Build configuration list for PBXProject "003-SimpleImageManipulation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC8C61D1E432F1D00A06311 /* Debug */,
+				FAC8C61E1E432F1D00A06311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC8C61F1E432F1D00A06311 /* Build configuration list for PBXNativeTarget "003-SimpleImageManipulation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC8C6201E432F1D00A06311 /* Debug */,
+				FAC8C6211E432F1D00A06311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAC8C6101E432F1D00A06311 /* Project object */;
+}

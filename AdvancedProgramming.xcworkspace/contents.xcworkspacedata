@@ -14,6 +14,9 @@
       location = "group:Libraries">
    </FileRef>
    <FileRef
+      location = "group:003-SimpleImageManipulation/003-SimpleImageManipulation.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:002-StringSearch/002-StringSearch.xcodeproj">
    </FileRef>
    <FileRef
