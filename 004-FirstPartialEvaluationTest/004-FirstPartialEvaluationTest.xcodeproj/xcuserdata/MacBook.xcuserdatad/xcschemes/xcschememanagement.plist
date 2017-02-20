@@ -4,15 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>001-MatrixMultiplication.xcscheme</key>
+		<key>004-FirstPartialEvaluationTest.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>4</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>FA12482B1E26676D002465F2</key>
+		<key>FA31A5F81E560A9F00A4780E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
