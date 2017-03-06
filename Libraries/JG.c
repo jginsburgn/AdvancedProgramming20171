@@ -54,7 +54,6 @@ char * readFile(const char * path) {
     return contents;
 }
 
-
 bool writeFile(const char * path, const char * string) {
     FILE * fd = fopen(path, "w"); //Open file for writing
     fputs(string, fd); //Write string
@@ -143,7 +142,27 @@ int findWhitespaceByte(const unsigned char * target, const int size) {
 
 char * substring(const char * target, const int from, const int to) {
     int substringSize = to - from + 1; //Calculate the needed size for the new string
-    char * retVal = malloc(sizeof(char) * substringSize); //Allocate new string
+    char * retVal = malloc(sizeof(char) * (substringSize + 1)); //Allocate new string
     memcpy(retVal, target + from, substringSize); //Copy bytes
+    retVal[substringSize] = '\0';
     return retVal;
+}
+
+bool seeded = false;
+float getRandomNumber() {
+    if (!seeded) {
+        srand(time(0));
+        seeded = true;
+    }
+    return rand()/(float)RAND_MAX;
+}
+
+int getRandomNumberLimited(const int limit) {
+    //The following instruction uses limit + 1 because when casting into int, the result is the same as flooring and then getting a random equal to limit would be very unlikely, much more unlikely than any other integer comprised between 0 and limit, excluding limit. Later, the possibility of getting a random equal to limit + 1 is eliminated and the possibility of this happening is negligible.
+    float randomFloat = getRandomNumber() * (limit + 1);
+    int randomInt = (int)randomFloat;
+    if (randomInt == (limit + 1)) {
+        randomInt = limit;
+    }
+    return randomInt;
 }

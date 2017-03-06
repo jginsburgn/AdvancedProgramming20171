@@ -1,77 +1,63 @@
-//
-//  main.c
-//  Playground
-//
-//  Created by Jonathan Ginsburg on 1/11/17.
-//  Copyright © 2017 Jonathan Ginsburg. All rights reserved.
-//
+/*
+ Simple program for a server using sockets
+ Can only connect one client at a time
+ */
 
-#include <stdlib.h>
-#include <signal.h>
+#include <sys/socket.h>
 #include <stdio.h>
-#include <errno.h>
+#include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
 
-int main(int argc, const char * argv[]) {
-    int * pipefd = malloc(sizeof(int) * 2);
-    pid_t cpid;
-    char buf;
+// Include libraries for sockets
+
+
+#define MAX_CONNECTIONS 5
+#define BUFFER_SIZE 1024
+
+void usage(char * program);
+void startServer(char * port);
+void waitForConnections(int server_fd);
+void communicationLoop(int connection_fd);
+
+int main(int argc, char * argv[])
+{
+    printf("=== SERVER PROGRAM ===\n");
     
-    if (pipe(pipefd) == -1) {
-        perror(strerror(errno));
-        exit(EXIT_FAILURE);
-    }
-    if ((cpid = fork()) == -1) {
-        perror(strerror(errno));
-        exit(EXIT_FAILURE);
-    }
-    else if (cpid != 0) {
-        //Parent
-        printf("[P] PID: %i.\n", getpid());
-        fflush(stdout);
-        //kill(getpid(), SIGSTOP); //For debugging
-        
-        //---Code:
-        printf("[P] *(%p): %i Out: *(%p): %i.\n", pipefd, pipefd[0], pipefd + 1, pipefd[1]);
-        
-        int out = pipefd[1];
-        close(pipefd[0]);
-        free(pipefd);
-        
-        char * input = malloc(sizeof(char) * 10);
-        printf("[P] Read %zi bytes.\n", read(STDIN_FILENO, input, 10));
-        write(out, input, 10);
-        
-        //---/Code
-        printf("Closing [P] PID: %i.\n", getpid());
-        fflush(stdout);
-    }
-    else {
-        //Child
-        printf("[C] PID: %i.\n", getpid());
-        fflush(stdout);
-        //kill(getpid(), SIGSTOP); //For debugging
-        
-        //---Code:
-        printf("[C] *(%p): %i Out: *(%p): %i.\n", pipefd, pipefd[0], pipefd + 1, pipefd[1]);
-        
-        int in = pipefd[0];
-        close(pipefd[1]);
-        free(pipefd);
-        
-        char * input = malloc(sizeof(char) * 10);
-        printf("[C] Read %zi bytes.\n", read(in, input, 10));
-        for (int i = 0; i < 10; ++i) {
-            char a = input[i];
-            printf(".%i.", (int)a);
-        }
-        puts("");
-        //puts(input);
-        
-        //---/Code
-        printf("Closing [C] PID: %i.\n", getpid());
-        fflush(stdout);
-    }
+    if (argc != 2)
+        usage(argv[0]);
+    
+    startServer(argv[1]);
+    
     return 0;
+}
+
+// Show the user how to run this program
+void usage(char * program)
+{
+    printf("Usage:\n%s {port_number}\n", program);
+    exit(EXIT_FAILURE);
+}
+
+// Initialize the server to be ready for connections
+void startServer(char * port)
+{
+    int socket_descriptor = socket(PF_INET, SOCK_STREAM, 0);
+    if (socket_descriptor == -1) {
+        printf("");
+    }
+    
+    
+}
+
+// Stand by for connections by the clients
+void waitForConnections(int server_fd)
+{
+    
+}
+
+// Talk between client and server
+void communicationLoop(int client_fd)
+{
+    
 }

@@ -14,6 +14,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <time.h>
+#include <float.h>
 
 //Boolean type wrapper into int
 typedef enum { false, true } bool;
@@ -51,5 +53,11 @@ int findWhitespaceByte(const unsigned char * target, const int size);
       findWhitespaceByte("hello", 1, 3) :=  "ell"
  */
 char * substring(const char * target, const int from, const int to);
+
+//Returns a random number in the following interval: [0,1]. See getRandomNumberLimited() below.
+float getRandomNumber();
+
+//Returns a random number in the following interval: [0,-limit-]. This is much better to use than (int)(getRandomNumber()*-limit-), because the latter has a very unlikely possibility of producing -limit- as the result.
+int getRandomNumberLimited(const int limit);
 
 #endif /* JG_h */
