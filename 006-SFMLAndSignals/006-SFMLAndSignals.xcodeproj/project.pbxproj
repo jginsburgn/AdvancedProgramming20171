@@ -1,0 +1,262 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAA348AF1E77ADBC00854603 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAA348AE1E77ADBC00854603 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FAA348AB1E77ADBC00854603 /* 006-SFMLAndSignals */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "006-SFMLAndSignals"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA348AE1E77ADBC00854603 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FAA348B11E77ADBC00854603 /* cute_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cute_image.jpg; sourceTree = "<group>"; };
+		FAA348B21E77ADBC00854603 /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nice_music.ogg; sourceTree = "<group>"; };
+		FAA348B31E77ADBC00854603 /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
+		FAA348B41E77ADBC00854603 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		FAA348BB1E77B58F00854603 /* SFML_installation_instructions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SFML_installation_instructions.pdf; sourceTree = "<group>"; };
+		FAA348BC1E77B5BF00854603 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAA348A91E77ADBC00854603 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAA348A31E77ADBC00854603 = {
+			isa = PBXGroup;
+			children = (
+				FAA348AD1E77ADBC00854603 /* 006-SFMLAndSignals */,
+				FAA348AC1E77ADBC00854603 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAA348AC1E77ADBC00854603 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAA348AB1E77ADBC00854603 /* 006-SFMLAndSignals */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAA348AD1E77ADBC00854603 /* 006-SFMLAndSignals */ = {
+			isa = PBXGroup;
+			children = (
+				FAA348BC1E77B5BF00854603 /* README.md */,
+				FAA348AE1E77ADBC00854603 /* main.cpp */,
+				FAA348B01E77ADBC00854603 /* Resources */,
+			);
+			name = "006-SFMLAndSignals";
+			path = "006-SFMLAndSignals";
+			sourceTree = "<group>";
+		};
+		FAA348B01E77ADBC00854603 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAA348BB1E77B58F00854603 /* SFML_installation_instructions.pdf */,
+				FAA348B11E77ADBC00854603 /* cute_image.jpg */,
+				FAA348B21E77ADBC00854603 /* nice_music.ogg */,
+				FAA348B31E77ADBC00854603 /* sansation.ttf */,
+				FAA348B41E77ADBC00854603 /* icon.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAA348AA1E77ADBC00854603 /* 006-SFMLAndSignals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA348B71E77ADBC00854603 /* Build configuration list for PBXNativeTarget "006-SFMLAndSignals" */;
+			buildPhases = (
+				FAA348A81E77ADBC00854603 /* Sources */,
+				FAA348A91E77ADBC00854603 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "006-SFMLAndSignals";
+			productName = "006-SFMLAndSignals";
+			productReference = FAA348AB1E77ADBC00854603 /* 006-SFMLAndSignals */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAA348A41E77ADBC00854603 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Jonathan Ginsburg";
+				TargetAttributes = {
+					FAA348AA1E77ADBC00854603 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FAA348A71E77ADBC00854603 /* Build configuration list for PBXProject "006-SFMLAndSignals" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FAA348A31E77ADBC00854603;
+			productRefGroup = FAA348AC1E77ADBC00854603 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAA348AA1E77ADBC00854603 /* 006-SFMLAndSignals */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAA348A81E77ADBC00854603 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA348AF1E77ADBC00854603 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FAA348B51E77ADBC00854603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Debug;
+		};
+		FAA348B61E77ADBC00854603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Release;
+		};
+		FAA348B81E77ADBC00854603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAA348B91E77ADBC00854603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAA348A71E77ADBC00854603 /* Build configuration list for PBXProject "006-SFMLAndSignals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA348B51E77ADBC00854603 /* Debug */,
+				FAA348B61E77ADBC00854603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAA348B71E77ADBC00854603 /* Build configuration list for PBXNativeTarget "006-SFMLAndSignals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA348B81E77ADBC00854603 /* Debug */,
+				FAA348B91E77ADBC00854603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAA348A41E77ADBC00854603 /* Project object */;
+}

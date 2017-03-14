@@ -14,6 +14,9 @@
       location = "group:Libraries">
    </FileRef>
    <FileRef
+      location = "group:/Users/MacBook/Repos/AdvancedProgramming20171/006-SFMLAndSIgnals/006-SFMLAndSignals.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:005-Blackjack/005-Blackjack.xcodeproj">
    </FileRef>
    <FileRef
