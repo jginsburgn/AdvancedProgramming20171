@@ -181,7 +181,7 @@ void * ui(void * arg) { //UI thread's execution function. It prints the reel win
 
 int main(int argc, const char * argv[]) {
     //Print welcome message and instructions
-    puts("\nWelcome to the slot machine by Jonathan Ginsburg (A01021617), finished on March the 30th of 2017 at 00:18 approximately. It is a project for evaluating the second partial of the Advanced Programming class. This program brings together the concepts of threads and mutexes:\n\nEach reel is shifted by an independent thread. Yet another thread, the UI one, is in charge of printing the reels' window and reading input from the user. Furthermore, each reel is represented by a character array, and another character array is used as aid during the shift operation; therefore, a mutex is used because all these arrays are shared among threads.\n\nTo pull the lever of the machine, press enter. To exit, press E followed by enter.\n");
+    puts("\nWelcome to the slot machine by Jonathan Ginsburg (A01021617), finished on March the 30th of 2017 at 00:18 approximately. It is a project for evaluating the second partial of the Advanced Programming class. This program brings together the concepts of threads and mutexes:\n\nEach reel is shifted by an independent thread. Yet another thread, the UI one, is in charge of printing the reels' window and reading input from the user. Furthermore, each reel is represented by a character array, and another character array is used as aid during the shift operation; therefore, a mutex is used because all these arrays are shared among threads.\n\nTo pull the lever of the machine, press enter. To exit, press e followed by enter.\n");
     
     //Set stop game boolean controller to false, for game to proceed
     should_stop_game = false;
